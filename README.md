@@ -71,6 +71,9 @@ You can also use the following Jinja2 macro in your templates:
     {% endmacro %}
 
 
+You can see Simple Pagination in action on [Aktuální nabídky práce](http://www.aktualninabidkyprace.cz/). It's a simple job board built on [Google App Engine](http://code.google.com/appengine/).
+
+
 ## Credits
 
 The PageLinks class is an adapted version of a utility class from the he3-appengine-lib project (http://code.google.com/p/he3-appengine-lib/wiki/PageLinks)
