@@ -24,7 +24,11 @@ In your project's base handler (base controller) class, create a pager method:
         # ...other code...
 
         def pager(self, query, page, total_items, per_page, url_root, page_field='pg', page_range= 9):
-            page = int(page or 1)
+            try:
+                page = int(page)
+            except ValueError:
+                page = 1
+
             entities = query.fetch(per_page, (page - 1) * per_page)
 
             pagination_links = PageLinks(
